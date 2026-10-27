@@ -1,0 +1,20 @@
+{
+  "protocol": "source_quality_quintile_v1",
+  "training_seeds": [
+    1088,
+    1089,
+    1090
+  ],
+  "groups": 5,
+  "per_group": 20,
+  "sampling_rounds": 5,
+  "selection_seed": 96001,
+  "sampling_seed": 97001,
+  "adaptation_incumbent_exact": 9.399715696516127,
+  "parent_diagnostics_sha256": "93926a9a6e1d640ac88a1b74e4f8a8089245146d115f94592a188fc4b8b520f8",
+  "expected_inputs": {
+    "source_checkpoint": "94ec28fc583f2f68ca3d3601166fa9a5babcc3c9e13a606f5cd2d4593384e719",
+    "source_data": "44b912690f545ed0f36289872cc64358c2c4f38e5b9c9dc24292bd52d9a3a4bd",
+    "target_data": "a8e4ceedd4415537501aad36676f840e6f32bf8d4573829ff6477526625ac1c3"
+  }
+}

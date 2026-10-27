@@ -1,0 +1,13 @@
+{
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "epochs": 30,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "beta": 0.001,
+  "score_weight": 1.0,
+  "grad_clip": 1.0,
+  "seed": 1088,
+  "cpu_threads": 1,
+  "diagnostic_samples": 128
+}

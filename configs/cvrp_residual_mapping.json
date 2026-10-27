@@ -1,0 +1,31 @@
+{
+  "protocol": "H_residual_v1",
+  "training_seeds": [1088, 1089, 1090],
+  "split_seed": 1088,
+  "shuffle_seed": 73001,
+  "source_selection_seed": 94001,
+  "sampling_seed": 95001,
+  "quality_bins": 10,
+  "sampling_rounds": 10,
+  "candidates_per_round": 41,
+  "epochs": 30,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "grad_clip": 1.0,
+  "max_pairs": 2048,
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "cpu_threads": 1,
+  "residual_std_floor": 1e-8,
+  "expected_inputs": {
+    "source_checkpoint": "94ec28fc583f2f68ca3d3601166fa9a5babcc3c9e13a606f5cd2d4593384e719",
+    "source_data": "44b912690f545ed0f36289872cc64358c2c4f38e5b9c9dc24292bd52d9a3a4bd",
+    "target_data": "a8e4ceedd4415537501aad36676f840e6f32bf8d4573829ff6477526625ac1c3"
+  },
+  "branches": {
+    "rank_residual": "B_rank([p,p^2,p^3])+B_residual(u)",
+    "rank_residual_shuffle": "same rank plus u permuted within fixed rank bin and partition",
+    "rank_residual_zero": "same rank plus zero residual"
+  },
+  "loss": "existing masked token-normalized CVRP NLL; no relation loss or generation-based selection"
+}

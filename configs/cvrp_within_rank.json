@@ -1,0 +1,30 @@
+{
+  "protocol": "within_rank_shuffle_v1",
+  "training_seeds": [
+    1088,
+    1089,
+    1090
+  ],
+  "split_seed": 1088,
+  "shuffle_seed": 73001,
+  "source_selection_seed": 94001,
+  "sampling_seed": 95001,
+  "quality_groups": 10,
+  "sampling_rounds": 10,
+  "candidates_per_round": 41,
+  "expected_inputs": {
+    "source_checkpoint": "94ec28fc583f2f68ca3d3601166fa9a5babcc3c9e13a606f5cd2d4593384e719",
+    "source_data": "44b912690f545ed0f36289872cc64358c2c4f38e5b9c9dc24292bd52d9a3a4bd",
+    "target_data": "a8e4ceedd4415537501aad36676f840e6f32bf8d4573829ff6477526625ac1c3"
+  },
+  "expected_baseline_code": {
+    "src/cvrp_mapping.py": "8a8c81312c46914f4c0e8bd4da3f839e926e6d45c22493141a79f6960a856730",
+    "src/regression/cvrp_vae.py": "8ddd24b56a747d38f5f844e1b11586afeb9db8dc4b756d9f271c04f44ee677c1",
+    "src/regression/tsp_vae.py": "e6a1f75a71442e725fda14eabc127bdf11732ca06f285c8722e9a4f00c7ce37c",
+    "src/tsp_mapping_controls.py": "741881d9d9f76f9ffe55beeb044a5e24cae1aa46c04c3a7678459159db15b6b1",
+    "src/experiment_cvrp_mapping.py": "91660070999ee79a49b330faca20d161f5140f9cea5dfae1b5379405306799eb",
+    "src/problem/cvrp_problem.py": "062c16fdbaeb3ecaf1b453af3491e7cdd3c5fcb6ad8cb9dbb3cdbadc421b0ea6",
+    "src/problem/tsp_problem.py": "f5d19c68434f348c6153f0335c0aab4e61579d7d4e3a49ebec68c7da0556fb0b"
+  },
+  "expected_baseline_config_sha256": "cc2172853fa0d1227428d6823f4f8345d97864f7ada163bede75a91a8ae2d1a1"
+}

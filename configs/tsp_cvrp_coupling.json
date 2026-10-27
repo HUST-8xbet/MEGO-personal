@@ -1,0 +1,17 @@
+{
+  "training_seeds": [1088, 1089, 1090],
+  "split_seed": 1088,
+  "seed": 1088,
+  "max_pairs": 2048,
+  "epochs": 30,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "grad_clip": 1.0,
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "cpu_threads": 1,
+  "alpha": 0.5,
+  "epsilon": 0.05,
+  "evaluation_rounds": 10,
+  "samples_per_round": 41
+}

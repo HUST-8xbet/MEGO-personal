@@ -1,0 +1,17 @@
+{
+  "protocol": "behavioral_profile_probe_v1",
+  "max_solutions_per_partition": 128,
+  "k": 16,
+  "tolerance": 1e-12,
+  "ridge_alpha": 1.0,
+  "bootstrap_draws": 2000,
+  "max_move_trials": 128,
+  "selection_seed": 321001,
+  "operator": {
+    "tsp": "uniform random 2-opt reversal from original solution",
+    "cvrp": "uniform random single-customer relocate, intra/inter-route, capacity checked, from original solution"
+  },
+  "selection": "evenly spaced by train-CDF percentile; no selection using probe outcomes",
+  "sets": "independent A/B/C; K=16; every move starts from original solution",
+  "regression": "rank, rank^2, rank^3; expanded adds feature A; standardized on train only; ridge alpha=1.0"
+}

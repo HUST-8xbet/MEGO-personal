@@ -1,0 +1,11 @@
+{
+  "epochs": 30,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "grad_clip": 1.0,
+  "seed": 1088,
+  "max_pairs": 2048,
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "cpu_threads": 1
+}
